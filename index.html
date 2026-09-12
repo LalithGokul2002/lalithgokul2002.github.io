@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lalith Gokul — Game Developer</title>
+    <meta name="description" content="Portfolio of Lalith Gokul A S, MSc Computer Game Engineering graduate specialising in gameplay programming, physics systems and real-time graphics.">
+    <link rel="icon" href="favicon/favicon.ico" sizes="32x32">
+    <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&amp;family=Space+Grotesk:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            
+<div class="logo">
+            <img src="favicon/favicon-96x96.png" alt="" class="logo-img">
+            <span class="nav-brand">Lalith Gokul</span>
+        </div>
+
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger" role="button" tabindex="0" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas id="hero-canvas" class="hero-canvas" aria-hidden="true"></canvas>
+        <div class="container hero-layout">
+            <!-- 3D-style diorama scene -->
+            <div class="hero-scene">
+                
+                <div class="hero-ground">
+                    <div class="hero-ground-glow"></div>
+                    <div class="hero-ground-text">
+                        <h1 class="hero-title">
+                            Gamer by Passion<br>
+                            <span class="highlight">Game Developer</span>
+                        </h1>
+                        <p class="hero-subtitle">Gameplay Programming | Level Design | Front-End Developer</p>
+                        <p class="hero-description">
+                            I’m an MSc Computer Game Engineering graduate specialising in physics systems, advanced graphics, and modern game technologies. With experience in game testing and gameplay evaluation, I focus on building technically robust systems while refining player experience through analytical thinking, mathematical modelling, and structured problem-solving.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="#projects" class="btn btn-primary">View My Work</a>
+                            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Retro signpost navigation -->
+            
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        As a gamer at heart, I understand what makes games truly engaging. 
+                        My journey in game development started from a passion for playing 
+                        games, which naturally evolved into creating them. I specialize in 
+                        game mechanics, level design, and bringing creative visions to life 
+                        through code and design.
+                    </p>
+                    <p>
+                        When I'm not developing games, you'll find me playing the latest 
+                        releases, analyzing game mechanics  
+                        or contributing to the indie game development community. Every game 
+                        I play teaches me something new that I can apply to my own projects.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat reveal">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Games Created</div>
+                        </div>
+                        <div class="stat reveal">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">Game Jams</div>
+                        </div>
+                        <div class="stat reveal">
+                            <div class="stat-number">5000+</div>
+                            <div class="stat-label">Hours Played</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills &amp; Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">🎮 Game Engines</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Unity</div>
+                        <div class="skill-item">Unreal Engine</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">💻 Programming</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">JavaScript</div>
+			<div class="skill-item">React</div>
+                    </div>
+                </div>
+                <div class="skill-category reveal">
+                    <h3 class="skill-category-title">🎨 Design &amp; Tools</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">Blender</div>
+                        <div class="skill-item">Photoshop</div>
+                        <div class="skill-item">Figma</div>
+                        <div class="skill-item">Git</div>
+			<div class="skill-item">CSS</div>
+			<div class="skill-item">SaSS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-card reveal">
+                    <div class="education-icon">📜</div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Bachelor of Engineering in Mechanical Engineering</h3>
+                        <p class="education-school">PSG college of Technology, Coimbatore</p>
+                        <p class="education-dates">2019 – 2023</p>
+                        <p class="education-desc">Focus on physics-based system modelling, analytical problem-solving, and computational techniques. Relevant Topics: Engineering Mathematics, Control Systems, Numerical Methods and 
+Computational Techniques, Modelling and Simulation. </p>
+                    </div>
+                </div>
+                <div class="education-card reveal">
+                    <div class="education-icon">🎓</div>
+                    <div class="education-content">
+                        <h3 class="education-degree">Master of Science in Computer Game Engineering</h3>
+                        <p class="education-school">Newcastle University, Newcastle</p>
+                        <p class="education-dates">2025 – 2026</p>
+                        <p class="education-desc">Specialised in advanced physics simulation, real-time rendering techniques, and modern game engine architecture. Key Modules: Advanced Game Technologies, Advanced Graphics for Games, Advanced Programming for Games, Game Technology Innovations, Engineering Gaming Solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Games</h2>
+            <div class="projects-grid">
+
+                <!-- ============================================================
+                     TO ADD A GAME: copy one .project-card block and edit it.
+                     Keep the summary to roughly 45 words and put the rest in
+                     .project-details so every card reads the same length.
+                     Media goes in media/ - see media/README.txt
+                     ============================================================ -->
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="media/bluff-game.gif"
+                             alt="Bluff Game: the pile being claimed after a challenge, cards sweeping to a player's hand">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bluff Game</h3>
+                        <p class="project-description">
+                            My MSc dissertation project: a turn-based card bluffing game in Unreal Engine 5.
+                            Three AI opponents &mdash; Tactical, Manipulator and Adaptive &mdash; extend a shared base
+                            class and resolve their moves through one common decision structure, so each reads
+                            a bluff and commits to it differently.
+                        </p>
+                        <div class="project-details" id="details-bluff">
+                            <div>
+                                <p class="project-description">
+                                    Supporting systems handle turn order, hand management and running player
+                                    stats, with a full UI flow covering declarations, an action bar, live
+                                    stats, a pause menu and a win screen. Because the archetypes share one
+                                    decision pipeline, their differences come from tuning rather than
+                                    duplicated logic &mdash; adding a fourth personality means adding a subclass,
+                                    not rewriting the turn loop.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-bluff">View more</button>
+
+                        <div class="project-embed project-embed-native project-embed-bluff">
+                            <video controls preload="none" playsinline
+                                   poster="media/bluff-game.png"
+                                   aria-label="Bluff Game gameplay footage">
+                                <source src="media/bluff-game.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-tech">
+                            <span>Unreal Engine 5</span>
+                            <span>Blueprints</span>
+                            <span>AI Design</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LalithGokul2002/Bluff-Game" class="project-link" target="_blank" rel="noopener">View Code</a>
+                            <!-- Gameplay video: paste the YouTube link here and uncomment
+                            <a href="https://youtu.be/VIDEO_ID" class="project-link" target="_blank" rel="noopener">Watch Gameplay</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="media/chase-game.gif"
+                             alt="3D Chase Game: AI hunters pathfinding through the maze, two breaking off toward power-ups">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">3D Chase Game</h3>
+                        <p class="project-description">
+                            MSc coursework for Advanced Game Technologies, written in C++ on Newcastle's nclgl
+                            framework and rendered with OpenGL. The player rolls a physics-driven ball through a maze arena
+                            while AI hunters close in &mdash; breaking off to grab a power-up when that suits
+                            them better than a direct chase.
+                        </p>
+                        <div class="project-details" id="details-chase">
+                            <div>
+                                <p class="project-description">
+                                    Each hunter runs a behaviour tree whose root is a selector: it first
+                                    attempts a sequence &mdash; find the nearest power-up, then path to it &mdash;
+                                    and falls back to chasing the player directly when no pickup is worth
+                                    taking. Movement is A* across a navigation grid, re-pathed on a timer so
+                                    hunters react to where the player is now rather than following a route
+                                    computed at spawn. Maze walls use oriented bounding boxes for collision,
+                                    three pickups respawn on their own timers, and the game runs through a
+                                    menu, playing and game-over state machine with a survival clock.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-chase">View more</button>
+
+                        <div class="project-embed project-embed-native">
+                            <video controls preload="none" playsinline
+                                   poster="media/chase-game.png"
+                                   aria-label="3D Chase Game gameplay footage">
+                                <source src="media/chase-game.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OpenGL</span>
+                            <span>Behaviour Trees</span>
+                            <span>Pathfinding</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LalithGokul2002/3D-Chase-game" class="project-link" target="_blank" rel="noopener">View Code</a>
+                            <!-- Gameplay video: paste the YouTube link here and uncomment
+                            <a href="https://youtu.be/VIDEO_ID" class="project-link" target="_blank" rel="noopener">Watch Gameplay</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="media/volcano-eruption.gif"
+                             alt="Volcano Eruption: the scene switching from day to night, lava glowing in the crater beneath the ash plume">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Volcano Eruption</h3>
+                        <p class="project-description">
+                            MSc coursework for Advanced Graphics for Games, written in C++ on Newcastle's nclgl
+                            framework and rendered with OpenGL. A volcanic landscape drawn across several render passes,
+                            with the eruption itself running on a 1,200-particle system of lava, vapour and
+                            smoke over shadow-mapped terrain.
+                        </p>
+                        <div class="project-details" id="details-volcano">
+                            <div>
+                                <p class="project-description">
+                                    The frame builds up in passes: a depth-only shadow pass from the light's
+                                    viewpoint into a 2048&sup2; map, a skybox, heightmap terrain, then a scene
+                                    graph traversed against the view frustum so only what is on screen gets
+                                    submitted. The terrain shader blends two textures by altitude, layers
+                                    three scales of noise so the surface never tiles visibly, applies
+                                    tangent-space bump mapping and samples the shadow map for contact
+                                    shadows. Each particle type carries its own gravity, lifetime and blend
+                                    mode, so molten rock arcs and falls while smoke climbs and thins. Day and
+                                    night lighting, eruption intensity and an animated ground-cracking effect
+                                    are switchable at runtime.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-volcano">View more</button>
+
+                        <div class="project-embed project-embed-native project-embed-169">
+                            <video controls preload="none" playsinline
+                                   poster="media/volcano-eruption.png"
+                                   aria-label="Volcano Eruption real-time render footage">
+                                <source src="media/volcano-eruption.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OpenGL</span>
+                            <span>GLSL</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LalithGokul2002/Volcano-eruption" class="project-link" target="_blank" rel="noopener">View Code</a>
+                            <!-- Gameplay video: paste the YouTube link here and uncomment
+                            <a href="https://youtu.be/VIDEO_ID" class="project-link" target="_blank" rel="noopener">Watch Demo</a>
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="media/team-project.gif"
+                             alt="Push/Pull Parkour: the player using telekinetic push and pull to traverse floating platforms">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Push/Pull Parkour</h3>
+                        <p class="project-description">
+                            A six-person MSc team project: a push/pull parkour game written in C++ and built
+                            for both PC and PS5 through a Jenkins CI pipeline. I owned most of the UI, the
+                            skeletal animation pipeline and the input layer, plus a share of the gameplay.
+                        </p>
+                        <div class="project-details" id="details-team">
+                            <div>
+                                <p class="project-description">
+                                    My largest pieces were the animation pipeline &mdash; GLTF and Assimp model
+                                    import feeding an ozz-animation runtime, with GPU skinning in the scene
+                                    shaders &mdash; and the front-end state machine covering the main menu, level
+                                    select, controls, pause, end-of-level and both the local and networked
+                                    game states. I also wrote the input layer, mapping keyboard and mouse
+                                    alongside PS5 DualSense bindings so the same levels play on either
+                                    platform, and worked on player movement and multiplayer bug fixing.
+                                    Levels run from a tutorial through the push and pull mechanics to a
+                                    vertical city.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-team">View more</button>
+
+                        <div class="project-embed project-embed-native">
+                            <video controls preload="none" playsinline
+                                   poster="media/team-project.png"
+                                   aria-label="Push/Pull Parkour gameplay footage">
+                                <source src="media/team-project.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OpenGL</span>
+                            <span>PS5</span>
+                            <span>Skeletal Animation</span>
+                            <span>Team Project</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card reveal">
+                    <div class="project-image">
+                        <img src="media/sprite-flight.gif"
+                             alt="Sprite Flight: the craft weaving through a dense field of drifting obstacles, score climbing past 150">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Sprite Flight</h3>
+                        <p class="project-description">
+                            A 2D score-attack survival game in Unity. The player steers a craft that rotates
+                            to face its heading through a field of obstacles, each spawned at a random scale
+                            and fired off with a random impulse, so no two runs ever play out the same way.
+                        </p>
+                        <div class="project-details" id="details-sprite">
+                            <div>
+                                <p class="project-description">
+                                    Score climbs with survival time, and a collision triggers a particle burst
+                                    and an instant restart from the same screen. Built against Unity's Input
+                                    System and UI Toolkit rather than the legacy input manager and uGUI: the
+                                    HUD is a UIDocument queried at runtime, and movement is applied through
+                                    Rigidbody2D inside FixedUpdate so the handling stays framerate
+                                    independent.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-sprite">View more</button>
+
+                        <div class="project-embed">
+                            <iframe src="https://itch.io/embed-upload/18977889?color=0a0a0f"
+                                    title="Play Sprite Flight"
+                                    allowfullscreen loading="lazy"></iframe>
+                        </div>
+
+                        <div class="project-tech">
+                            <span>Unity</span>
+                            <span>C#</span>
+                            <span>2D URP</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LalithGokul2002/Sprite-Flight" class="project-link" target="_blank" rel="noopener">View Code</a>
+                            <a href="https://lalith2002.itch.io/sprite-flight" class="project-link" target="_blank" rel="noopener">Play in Browser</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="contact-subtitle">
+                Looking for a game developer for your next project? Want to collaborate 
+                on a game jam? Let's create something amazing together!
+            </p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:lalithgokulas@gmail.com">lalithgokulas@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🎮</div>
+                        <div>
+                            <h3>Steam</h3>
+                            <p><a href="https://steamcommunity.com/id/beepop333/" target="_blank" rel="noopener">steamcommunity.com/id/beepop333</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">💼</div>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/lalithgokulas1802/" target="_blank" rel="noopener">linkedin.com/in/lalithgokulas1802</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🐙</div>
+                        <div>
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/LalithGokul2002" target="_blank" rel="noopener">github.com/LalithGokul2002</a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- The form needs a backend to go anywhere. Sign up at formspree.io,
+                     then put your endpoint in the action below and uncomment it:
+                     <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
+                     Until then this form validates but does not send. -->
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" name="name" placeholder="Your Name"
+                               aria-label="Your name" autocomplete="name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" name="email" placeholder="Your Email"
+                               aria-label="Your email address" autocomplete="email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" name="message" placeholder="Your Message" rows="5"
+                                  aria-label="Your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year">2026</span> Lalith Gokul A S. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://github.com/LalithGokul2002" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.linkedin.com/in/lalithgokulas1802/" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+                <a href="https://steamcommunity.com/id/beepop333/" aria-label="Steam" target="_blank" rel="noopener">Steam</a>
+                <a href="https://www.instagram.com/lg_lalith_beepop?igsh=MXZucnRxdzlvYmh2dg==" aria-label="Instagram" target="_blank" rel="noopener">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+
+</body></html>

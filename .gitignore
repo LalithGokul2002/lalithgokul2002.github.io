@@ -1,0 +1,12 @@
+# Local editing backups - git history replaces these
+*.bak
+*.bak[0-9]
+*.bak[0-9][0-9]
+
+# OS cruft
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# CV held back: contains home address and phone. Add a scrubbed version later.
+Resume/
