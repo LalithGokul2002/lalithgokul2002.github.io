@@ -474,11 +474,7 @@ Computational Techniques, Modelling and Simulation. </p>
                         </div>
                     </div>
                 </div>
-                <!-- The form needs a backend to go anywhere. Sign up at formspree.io,
-                     then put your endpoint in the action below and uncomment it:
-                     <form class="contact-form" action="https://formspree.io/f/YOUR_ID" method="POST">
-                     Until then this form validates but does not send. -->
-                <form class="contact-form">
+                <form class="contact-form" action="https://formspree.io/f/mwlkjdqg" method="POST">
                     <div class="form-group">
                         <input type="text" id="contact-name" name="name" placeholder="Your Name"
                                aria-label="Your name" autocomplete="name" required>
@@ -491,8 +487,19 @@ Computational Techniques, Modelling and Simulation. </p>
                         <textarea id="contact-message" name="message" placeholder="Your Message" rows="5"
                                   aria-label="Your message" required></textarea>
                     </div>
+
+                    <!-- Gives every email a useful subject line instead of "New submission from..." -->
+                    <input type="hidden" name="_subject" value="Portfolio contact — lalithgokul2002.github.io">
+                    <!-- Send the visitor back here rather than to Formspree's own thank-you page -->
+                    <input type="hidden" name="_next" value="https://lalithgokul2002.github.io/?sent=1#contact">
+                    <!-- Honeypot: bots fill every field they find, Formspree discards those submissions -->
+                    <input type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" hidden>
+
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
+                <p class="form-status" id="form-status" role="status" hidden>
+                    Thanks &mdash; your message is on its way. I'll get back to you soon.
+                </p>
             </div>
         </div>
     </section>

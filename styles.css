@@ -1251,3 +1251,14 @@ body::after {
 .project-embed-bluff {
     padding-top: 55%;
 }
+
+/* Confirmation shown after Formspree redirects back with ?sent=1 */
+.form-status {
+    margin-top: 1rem;
+    padding: 0.85rem 1.1rem;
+    border-radius: var(--r-sm);
+    border: 1px solid var(--primary-color);
+    background: rgba(0, 217, 255, 0.08);
+    color: var(--text-primary);
+    font-weight: 500;
+}

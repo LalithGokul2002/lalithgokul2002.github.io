@@ -90,6 +90,15 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  // Formspree redirects back with ?sent=1 after a successful submission. Without
+  // this the visitor lands on the page again with no sign anything happened.
+  const formStatus = document.getElementById("form-status");
+  if (formStatus && new URLSearchParams(window.location.search).has("sent")) {
+    formStatus.hidden = false;
+    const contact = document.getElementById("contact");
+    if (contact) contact.scrollIntoView();
+  }
+
   // Reveal elements as they scroll into view, staggered within each group.
   const revealItems = document.querySelectorAll(".reveal");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
