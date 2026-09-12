@@ -589,7 +589,8 @@ section {
     background: var(--bg-dark);
 }
 
-.education-timeline {
+.education-timeline,
+.experience-timeline {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -597,7 +598,8 @@ section {
     margin: 0 auto;
 }
 
-.education-card {
+.education-card,
+.experience-card {
     display: flex;
     gap: 1.5rem;
     align-items: flex-start;
@@ -609,13 +611,15 @@ section {
     transition: all 0.3s ease;
 }
 
-.education-card:hover {
+.education-card:hover,
+.experience-card:hover {
     transform: translateY(-5px);
     border-color: var(--primary-color);
     box-shadow: var(--shadow-lg);
 }
 
-.education-icon {
+.education-icon,
+.experience-icon {
     font-size: 2.5rem;
     width: 60px;
     height: 60px;
@@ -628,31 +632,36 @@ section {
     border: 1px solid rgba(0, 217, 255, 0.3);
 }
 
-.education-content {
+.education-content,
+.experience-content {
     flex: 1;
 }
 
-.education-degree {
+.education-degree,
+.experience-degree {
     font-size: 1.35rem;
     font-weight: 600;
     margin-bottom: 0.35rem;
     color: var(--text-primary);
 }
 
-.education-school {
+.education-school,
+.experience-school {
     font-size: 1rem;
     color: var(--primary-color);
     margin-bottom: 0.25rem;
     font-weight: 500;
 }
 
-.education-dates {
+.education-dates,
+.experience-dates {
     font-size: 0.9rem;
     color: var(--text-secondary);
     margin-bottom: 0.75rem;
 }
 
-.education-desc {
+.education-desc,
+.experience-desc {
     font-size: 0.95rem;
     color: var(--text-secondary);
     line-height: 1.6;
