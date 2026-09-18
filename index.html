@@ -114,7 +114,7 @@
                     </p>
                     <div class="about-stats">
                         <div class="stat reveal">
-                            <div class="stat-number">5</div>
+                            <div class="stat-number">6</div>
                             <div class="stat-label">Games Created</div>
                         </div>
                         <div class="stat reveal">
@@ -242,20 +242,12 @@ Computational Techniques, Modelling and Simulation. </p>
                     <div class="project-content">
                         <h3 class="project-title">Bluff Game</h3>
                         <p class="project-description">
-                            My MSc dissertation project: a turn-based card bluffing game in Unreal Engine 5.
-                            Three AI opponents &mdash; Tactical, Manipulator and Adaptive &mdash; extend a shared base
-                            class and resolve their moves through one common decision structure, so each reads
-                            a bluff and commits to it differently.
+                            My MSc dissertation: a turn-based card bluffing game in Unreal Engine 5, with three AI opponents &mdash; Tactical, Manipulator and Adaptive &mdash; that each read and commit to bluffs differently.
                         </p>
                         <div class="project-details" id="details-bluff">
                             <div>
                                 <p class="project-description">
-                                    Supporting systems handle turn order, hand management and running player
-                                    stats, with a full UI flow covering declarations, an action bar, live
-                                    stats, a pause menu and a win screen. Because the archetypes share one
-                                    decision pipeline, their differences come from tuning rather than
-                                    duplicated logic &mdash; adding a fourth personality means adding a subclass,
-                                    not rewriting the turn loop.
+                                    All three extend one base class and share a single decision pipeline, so they differ through tuning, not duplicated logic. Supporting systems cover turn order, hand management and player stats, with a full UI flow from declarations to the win screen.
                                 </p>
                             </div>
                         </div>
@@ -290,22 +282,12 @@ Computational Techniques, Modelling and Simulation. </p>
                     <div class="project-content">
                         <h3 class="project-title">3D Chase Game</h3>
                         <p class="project-description">
-                            MSc coursework for Advanced Game Technologies, written in C++ on Newcastle's nclgl
-                            framework and rendered with OpenGL. The player rolls a physics-driven ball through a maze arena
-                            while AI hunters close in &mdash; breaking off to grab a power-up when that suits
-                            them better than a direct chase.
+                            MSc coursework for Advanced Game Technologies in C++ and OpenGL on Newcastle's nclgl framework. Roll a physics-driven ball through a maze as AI hunters close in &mdash; detouring for power-ups when it pays.
                         </p>
                         <div class="project-details" id="details-chase">
                             <div>
                                 <p class="project-description">
-                                    Each hunter runs a behaviour tree whose root is a selector: it first
-                                    attempts a sequence &mdash; find the nearest power-up, then path to it &mdash;
-                                    and falls back to chasing the player directly when no pickup is worth
-                                    taking. Movement is A* across a navigation grid, re-pathed on a timer so
-                                    hunters react to where the player is now rather than following a route
-                                    computed at spawn. Maze walls use oriented bounding boxes for collision,
-                                    three pickups respawn on their own timers, and the game runs through a
-                                    menu, playing and game-over state machine with a survival clock.
+                                    Each hunter runs a behaviour tree: a selector tries a find-and-path-to-power-up sequence, falling back to a direct chase. Movement is A* over a navigation grid, re-pathed on a timer to track the player. Plus OBB wall collision, respawning pickups and a menu, play and game-over state machine.
                                 </p>
                             </div>
                         </div>
@@ -341,24 +323,12 @@ Computational Techniques, Modelling and Simulation. </p>
                     <div class="project-content">
                         <h3 class="project-title">Volcano Eruption</h3>
                         <p class="project-description">
-                            MSc coursework for Advanced Graphics for Games, written in C++ on Newcastle's nclgl
-                            framework and rendered with OpenGL. A volcanic landscape drawn across several render passes,
-                            with the eruption itself running on a 1,200-particle system of lava, vapour and
-                            smoke over shadow-mapped terrain.
+                            MSc coursework for Advanced Graphics for Games in C++ and OpenGL on Newcastle's nclgl framework. A multi-pass volcanic scene over shadow-mapped terrain, with a 1,200-particle eruption of lava, vapour and smoke.
                         </p>
                         <div class="project-details" id="details-volcano">
                             <div>
                                 <p class="project-description">
-                                    The frame builds up in passes: a depth-only shadow pass from the light's
-                                    viewpoint into a 2048&sup2; map, a skybox, heightmap terrain, then a scene
-                                    graph traversed against the view frustum so only what is on screen gets
-                                    submitted. The terrain shader blends two textures by altitude, layers
-                                    three scales of noise so the surface never tiles visibly, applies
-                                    tangent-space bump mapping and samples the shadow map for contact
-                                    shadows. Each particle type carries its own gravity, lifetime and blend
-                                    mode, so molten rock arcs and falls while smoke climbs and thins. Day and
-                                    night lighting, eruption intensity and an animated ground-cracking effect
-                                    are switchable at runtime.
+                                    Passes: a 2048&sup2; depth-only shadow map, skybox, heightmap terrain and a frustum-culled scene graph. The terrain shader blends textures by altitude, layers three noise scales to hide tiling, and adds bump mapping and contact shadows. Each particle type has its own gravity, lifetime and blend mode; day/night, eruption intensity and ground cracking toggle at runtime.
                                 </p>
                             </div>
                         </div>
@@ -394,22 +364,12 @@ Computational Techniques, Modelling and Simulation. </p>
                     <div class="project-content">
                         <h3 class="project-title">Push/Pull Parkour</h3>
                         <p class="project-description">
-                            A six-person MSc team project: a push/pull parkour game written in C++ and built
-                            for both PC and PS5 through a Jenkins CI pipeline. I owned most of the UI, the
-                            skeletal animation pipeline and the input layer, plus a share of the gameplay.
+                            A six-person MSc team project: a push/pull parkour game in C++ for PC and PS5, built through Jenkins CI. I owned most of the UI, the animation pipeline and the input layer, plus some gameplay.
                         </p>
                         <div class="project-details" id="details-team">
                             <div>
                                 <p class="project-description">
-                                    My largest pieces were the animation pipeline &mdash; GLTF and Assimp model
-                                    import feeding an ozz-animation runtime, with GPU skinning in the scene
-                                    shaders &mdash; and the front-end state machine covering the main menu, level
-                                    select, controls, pause, end-of-level and both the local and networked
-                                    game states. I also wrote the input layer, mapping keyboard and mouse
-                                    alongside PS5 DualSense bindings so the same levels play on either
-                                    platform, and worked on player movement and multiplayer bug fixing.
-                                    Levels run from a tutorial through the push and pull mechanics to a
-                                    vertical city.
+                                    The animation pipeline imports GLTF and Assimp models into an ozz-animation runtime with GPU skinning. The UI state machine covers menus, level select, controls, pause, end-of-level, and local and networked play. I also mapped keyboard, mouse and PS5 DualSense input, and worked on player movement and multiplayer fixes.
                                 </p>
                             </div>
                         </div>
@@ -433,25 +393,48 @@ Computational Techniques, Modelling and Simulation. </p>
                 </div>
                 <div class="project-card reveal">
                     <div class="project-image">
+                        <img src="media/air-hockey.jpg"
+                             alt="Air Hockey &mdash; Neon Arcade: a neon-lit air hockey table with a blue puck and red paddle">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Air Hockey &mdash; Neon Arcade</h3>
+                        <p class="project-description">
+                            A single-player neon air hockey game in React, TypeScript and Vite, running on my own Canvas game engine &mdash; fixed-timestep physics, collision detection, predictive AI and touch controls.
+                        </p>
+                        <div class="project-details" id="details-airhockey">
+                            <div>
+                                <p class="project-description">
+                                    Physics substeps to stop a fast puck tunnelling, handling momentum transfer, friction and corner cases. A state-machine AI &mdash; defend, track, attack, return, clear &mdash; predicts the puck's path including wall bounces, across several difficulty profiles. Plus Web Audio sound, goal-only camera shake, full mobile support and 21 automated edge-case tests.
+                                </p>
+                            </div>
+                        </div>
+                        <button type="button" class="project-toggle" aria-expanded="false" aria-controls="details-airhockey">View more</button>
+                        <div class="project-tech">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>HTML5 Canvas</span>
+                            <span>Custom Engine</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/LalithGokul2002/Air-hockey" class="project-link" target="_blank" rel="noopener">View Code</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card reveal">
+                    <div class="project-image">
                         <img src="media/sprite-flight.gif"
                              alt="Sprite Flight: the craft weaving through a dense field of drifting obstacles, score climbing past 150">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Sprite Flight</h3>
                         <p class="project-description">
-                            A 2D score-attack survival game in Unity. The player steers a craft that rotates
-                            to face its heading through a field of obstacles, each spawned at a random scale
-                            and fired off with a random impulse, so no two runs ever play out the same way.
+                            A 2D score-attack survival game in Unity. Steer a craft through a field of obstacles, each spawned at a random scale and impulse, so no two runs play the same.
                         </p>
                         <div class="project-details" id="details-sprite">
                             <div>
                                 <p class="project-description">
-                                    Score climbs with survival time, and a collision triggers a particle burst
-                                    and an instant restart from the same screen. Built against Unity's Input
-                                    System and UI Toolkit rather than the legacy input manager and uGUI: the
-                                    HUD is a UIDocument queried at runtime, and movement is applied through
-                                    Rigidbody2D inside FixedUpdate so the handling stays framerate
-                                    independent.
+                                    Score climbs with survival time; a collision triggers a particle burst and an instant restart. Built on Unity's Input System and UI Toolkit rather than the legacy stacks, with Rigidbody2D movement in FixedUpdate for framerate-independent handling.
                                 </p>
                             </div>
                         </div>
