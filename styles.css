@@ -1271,3 +1271,18 @@ body::after {
     color: var(--text-primary);
     font-weight: 500;
 }
+
+/* Inline gameplay GIF in a card body - same frame treatment as the video embeds */
+.project-gameplay {
+    margin: 0 0 1rem;
+    border-radius: var(--r-sm);
+    overflow: hidden;
+    border: 1px solid rgba(0, 217, 255, 0.3);
+    background: #000;
+}
+
+.project-gameplay img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
