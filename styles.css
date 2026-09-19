@@ -534,7 +534,7 @@ section {
 
 .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 2rem;
 }
 
@@ -1272,17 +1272,3 @@ body::after {
     font-weight: 500;
 }
 
-/* Inline gameplay GIF in a card body - same frame treatment as the video embeds */
-.project-gameplay {
-    margin: 0 0 1rem;
-    border-radius: var(--r-sm);
-    overflow: hidden;
-    border: 1px solid rgba(0, 217, 255, 0.3);
-    background: #000;
-}
-
-.project-gameplay img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
